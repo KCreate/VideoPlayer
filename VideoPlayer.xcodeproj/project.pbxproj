@@ -13,11 +13,12 @@
 		F489F907186E5C1800614FE8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F489F905186E5C1800614FE8 /* Credits.rtf */; };
 		F489F90A186E5C1800614FE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F489F909186E5C1800614FE8 /* AppDelegate.m */; };
 		F489F90D186E5C1800614FE8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F489F90B186E5C1800614FE8 /* MainMenu.xib */; };
-		F489F90F186E5C1800614FE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F489F90E186E5C1800614FE8 /* Images.xcassets */; };
 		F489F916186E5C1800614FE8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F489F915186E5C1800614FE8 /* XCTest.framework */; };
 		F489F917186E5C1800614FE8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F489F8F6186E5C1800614FE8 /* Cocoa.framework */; };
 		F489F91F186E5C1800614FE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F489F91D186E5C1800614FE8 /* InfoPlist.strings */; };
 		F489F921186E5C1800614FE8 /* VideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F489F920186E5C1800614FE8 /* VideoPlayerTests.m */; };
+		F489F92D186E633E00614FE8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F489F92C186E633E00614FE8 /* WebKit.framework */; };
+		F489F92F186E754F00614FE8 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = F489F92E186E754F00614FE8 /* appicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +45,13 @@
 		F489F908186E5C1800614FE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F489F909186E5C1800614FE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F489F90C186E5C1800614FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		F489F90E186E5C1800614FE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F489F914186E5C1800614FE8 /* VideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F489F915186E5C1800614FE8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F489F91C186E5C1800614FE8 /* VideoPlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoPlayerTests-Info.plist"; sourceTree = "<group>"; };
 		F489F91E186E5C1800614FE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F489F920186E5C1800614FE8 /* VideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerTests.m; sourceTree = "<group>"; };
+		F489F92C186E633E00614FE8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F489F92E186E754F00614FE8 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F489F92D186E633E00614FE8 /* WebKit.framework in Frameworks */,
 				F489F8F7186E5C1800614FE8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +79,7 @@
 		F489F8EA186E5C1800614FE8 = {
 			isa = PBXGroup;
 			children = (
+				F489F92E186E754F00614FE8 /* appicon.png */,
 				F489F8FC186E5C1800614FE8 /* VideoPlayer */,
 				F489F91A186E5C1800614FE8 /* VideoPlayerTests */,
 				F489F8F5186E5C1800614FE8 /* Frameworks */,
@@ -95,6 +99,7 @@
 		F489F8F5186E5C1800614FE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F489F92C186E633E00614FE8 /* WebKit.framework */,
 				F489F8F6186E5C1800614FE8 /* Cocoa.framework */,
 				F489F915186E5C1800614FE8 /* XCTest.framework */,
 				F489F8F8186E5C1800614FE8 /* Other Frameworks */,
@@ -118,7 +123,6 @@
 				F489F908186E5C1800614FE8 /* AppDelegate.h */,
 				F489F909186E5C1800614FE8 /* AppDelegate.m */,
 				F489F90B186E5C1800614FE8 /* MainMenu.xib */,
-				F489F90E186E5C1800614FE8 /* Images.xcassets */,
 				F489F8FD186E5C1800614FE8 /* Supporting Files */,
 			);
 			path = VideoPlayer;
@@ -201,6 +205,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Leonard Schuetz";
 				TargetAttributes = {
+					F489F8F2186E5C1800614FE8 = {
+						DevelopmentTeam = 69M9G6Q88G;
+					};
 					F489F913186E5C1800614FE8 = {
 						TestTargetID = F489F8F2186E5C1800614FE8;
 					};
@@ -230,8 +237,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F489F92F186E754F00614FE8 /* appicon.png in Resources */,
 				F489F901186E5C1800614FE8 /* InfoPlist.strings in Resources */,
-				F489F90F186E5C1800614FE8 /* Images.xcassets in Resources */,
 				F489F907186E5C1800614FE8 /* Credits.rtf in Resources */,
 				F489F90D186E5C1800614FE8 /* MainMenu.xib in Resources */,
 			);
@@ -382,7 +389,6 @@
 		F489F925186E5C1800614FE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VideoPlayer/VideoPlayer-Prefix.pch";
@@ -395,7 +401,6 @@
 		F489F926186E5C1800614FE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VideoPlayer/VideoPlayer-Prefix.pch";
@@ -464,6 +469,7 @@
 				F489F926186E5C1800614FE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F489F927186E5C1800614FE8 /* Build configuration list for PBXNativeTarget "VideoPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +478,7 @@
 				F489F929186E5C1800614FE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
