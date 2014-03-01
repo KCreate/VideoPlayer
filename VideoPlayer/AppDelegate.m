@@ -5,6 +5,7 @@
 @synthesize load;
 @synthesize textfield;
 @synthesize popupbutton;
+@synthesize window;
 
 //Initialized UserDefaults Values
 //      videoIDs            - NSArray
@@ -31,6 +32,8 @@
         [popupbutton removeAllItems];
         [popupbutton addItemsWithTitles:videoIDs];
     }
+    
+    [window setLevel:NSFloatingWindowLevel];
 }
 
 -(IBAction)loadURL:(id)sender {
@@ -47,10 +50,10 @@
 
 -(void)loadURL_v {
     NSLog(@"URL loads");
-    //Load the video
     NSString *VIDEO_ID = textfield.stringValue;
     NSString *VIDEO_BaseURL = @"http://www.youtube.com/embed/";
     NSString *VIDEO_URL = [NSString stringWithFormat:@"%@%@", VIDEO_BaseURL, VIDEO_ID];
+    
     NSURL *VIDEO_URLtl = [NSURL URLWithString:VIDEO_URL];
     [[webview mainFrame] loadRequest:[NSURLRequest requestWithURL:VIDEO_URLtl]];
     
